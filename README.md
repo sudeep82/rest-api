@@ -336,12 +336,12 @@ Dec 8, 2019 2:43 PM
 
 ## Improvements
 1. can add logging to this and extend it to use tools like ElasticSearch Kibana to generate logstash visualization
-2. can add token based authentication for teachers to send when requesting the api
+2. can add token based authentication for users to send when requesting the api
 3. can build classes and describe all properties with in it to use temperature and volume properties
 4. can add swagger for properly documenting the API
 5. can add more to unit test and increase the coverage of the test and also add UI using angular to provide user with UI platform for this app
 6. Can add monitoring to api health and need to do some cleanup on commented codes and not needed files geared toward extending this to add UI,swagger,creating different routes etc
-7. For this particular requirement, we can have just one endpoint. Another good improvement would be to have batch requests where teacher can input all the student records and get the json block with the result.
+7. For this particular requirement, we can have just one endpoint. Another good improvement would be to have batch requests where user can input all the student records and get the json block with the result.
 ## License
 
 
