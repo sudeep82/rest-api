@@ -93,10 +93,10 @@ Connection: keep-alive
 cache-control: no-cache
 
 {
-	"initialTemperature" : 84.2,
+	"initialTemperature" : 32,
 	"initialUnit" : "Fahrenheit",
 	"finalUnit" : "Rankine",
-	"finalTemperature" : 543.94
+	"finalTemperature" : 491.67
 }
 
 Output
@@ -150,7 +150,7 @@ cache-control: no-cache
 	"initialTemperature" : 6.5,
 	"initialUnit" : "Fahrenheit",
 	"finalUnit" : "Rankine",
-	"finalTemperature" : "dog"
+	"finalTemperature" : "muse"
 }
 
 {
@@ -175,7 +175,7 @@ cache-control: no-cache
 	"initialVolume" : 20,
 	"initialUnit" : "cups",
 	"finalUnit" : "gallons",
-	"finalVolume" : 0.001
+	"finalVolume" : 0.009
 }
 
 Output
@@ -202,30 +202,12 @@ curl -X POST \
   -H 'User-Agent: PostmanRuntime/7.15.2' \
   -H 'cache-control: no-cache' \
   -d '{
-	"inputNumber" : 84.2,
+	"inputNumber" : 32,
 	"initialUnit" : "fahrenheit",
 	"finalUnit" : "rankine",
-	"outputNumber" : 543.94
+	"outputNumber" : 491.67
 }'
 
-curl -X POST \
-  http://localhost:3000/unit-api/unit \
-  -H 'Accept: */*' \
-  -H 'Accept-Encoding: gzip, deflate' \
-  -H 'Cache-Control: no-cache' \
-  -H 'Connection: keep-alive' \
-  -H 'Content-Length: 110' \
-  -H 'Content-Type: application/json' \
-  -H 'Host: localhost:3000' \
-  -H 'Postman-Token: 550877b0-2f75-4f8d-b6ba-a57624968a3d,db935e09-29ac-4b13-84eb-c2fa25fc1a94' \
-  -H 'User-Agent: PostmanRuntime/7.15.2' \
-  -H 'cache-control: no-cache' \
-  -d '{
-	"inputNumber" : 317.33,
-	"initialUnit" : "kelvin",
-	"finalUnit" : "fahrenheit",
-	"outputNumber" : 111.554
-}'
 ```
 
 ## Deployment
@@ -341,7 +323,7 @@ Dec 8, 2019 2:43 PM
 4. can add swagger for properly documenting the API
 5. can add more to unit test and increase the coverage of the test and also add UI using angular to provide user with UI platform for this app
 6. Can add monitoring to api health and need to do some cleanup on commented codes and not needed files geared toward extending this to add UI,swagger,creating different routes etc
-7. For this particular requirement, we can have just one endpoint. Another good improvement would be to have batch requests where user can input all the student records and get the json block with the result.
+7.  we can have just one endpoint. Another good improvement would be to have batch requests where user can input all the student records and get the json block with the result.
 ## License
 
 
